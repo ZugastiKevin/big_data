@@ -36,7 +36,7 @@ def nomber
 
     puts
     puts
-    #sleep(2)
+    sleep(1)
     print "Il y a ", array.count, " Handle Twitter."
     puts
     puts
@@ -46,7 +46,7 @@ end
 
 
 def smallest
-    #sleep(2)
+    sleep(2)
     print "Le handle le plus court est: ", array_ordered[0]
     puts
     puts
@@ -55,7 +55,7 @@ end
 
 
 def five
-    #sleep(2)
+    sleep(2)
     print "Il y a ", array_five," Handle de 5 caractères."
     puts
     puts
@@ -64,7 +64,7 @@ end
 
 
 def caps
-    #sleep(2)
+    sleep(2)
     print "Il y a ", array_caps, " handle qui commencent par une majuscule."
     puts
     puts
@@ -73,9 +73,9 @@ end
 
 
 def alphabetical
-    #sleep(2)
+    sleep(2)
     print "Les voila par ordre alphabétique, attention sa prend de la place!"
-    #sleep(2)
+    sleep(4)
     puts
     puts array_lowcaps.sort
     puts
@@ -85,10 +85,10 @@ end
 
 
 def handle_size
-    #sleep(2)
+    sleep(2)
     puts "Les voila par ordre de taille de handle, attention sa prend de la place! encore!"
     puts
-    #sleep(2)
+    sleep(4)
     puts array_ordered
     puts
     puts
@@ -98,8 +98,8 @@ end
 
 
 def search
-    #sleep(2)
-    print "la position dans l'array de @epenser est la:",array.find("@epenser")," place."
+    sleep(2)
+    print "la position dans l'array de @epenser est la: ",array.find_index{|penser| penser == "@epenser" },"eme place."
     puts
     puts
 end
